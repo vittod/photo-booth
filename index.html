@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>photo booth</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-bar">
+                <h1>photo booth</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="start-view show">
+                <div class="interface">
+                    <button type="button" id="openCapBtn" class="btn">on</button>
+                </div>
+            </div>
+            <div class="capture-view">
+                <video id="video" width="320" height="240" autoplay></video>
+                <div class="interface">
+                    <button id="snapBtn" class="btn">Snap Photo</button>
+                </div>
+            </div>
+            <div class="snap-view">
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <div class="interface">
+                    <button type="button" id="resetBtn" class="btn">reset</button>
+                </div>
+            </div>
+
+            <div class="return-img">
+                <img src="img/Download5.png" alt="">
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="booth.js"></script>
+    </body>
+</html>
